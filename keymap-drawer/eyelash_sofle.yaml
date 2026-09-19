@@ -1,3 +1,4 @@
+layout: {zmk_keyboard: eyelash_sofle}
 layers:
   default:
   - $$mdi:keyboard-esc$$
@@ -51,7 +52,7 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
-  - $$mdi:apple-keyboard-shift$$
+  - {t: '$$mdi:keyboard-return$$', type: enter}
   - PLAY
   - $$mdi:keyboard-esc$$
   - misc
@@ -60,9 +61,9 @@ layers:
   - LGUI
   - $$mdi:mouse-left-click-outline$$
   - controls
+  - $$mdi:keyboard-space$$
   - {t: '$$mdi:backspace$$', type: backspace}
   - symbols
-  - misc
   - {t: '$$mdi:keyboard-return$$', type: enter}
   controls:
   - {t: '$$mdi:transfer$$', type: trans}
@@ -191,8 +192,8 @@ layers:
   - $$mdi:mouse-right-click-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   misc:
   - {t: '$$mdi:transfer$$', type: trans}
@@ -257,5 +258,5 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held alternate}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
