@@ -7,5 +7,8 @@ on:
 
 jobs:
   build:
-    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
+    # Must match the zmk revision pinned in config/west.yml — the @main
+    # workflow gates on CONFIG_ZMK_BOARD_COMPAT, which Zephyr 3.5 boards
+    # cannot set.
+    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@v0.3.0
 
